@@ -10,7 +10,7 @@
      |----- Welcome（Just Welcome）
 
 
-    Part3（Java的基本程序设计结构，2014年03月16日 -- ？）
+    Part3（Java的基本程序设计结构，已完成）
      |
      |----- FirstSample（Not a 'Hello World' haha）
      |
@@ -21,6 +21,16 @@
      |----- Retirement2（do...while...循环）
      |
      |----- LotteryOdds（for循环）
+     |
+     |----- BigIntegerTest（大数运算）
+     |
+     |----- CompoundInterest（for each循环）
+     |
+     |----- LotteryArray（多维数组）
+     |
+     |----- LotteryDrawing（数组排序）
+
+    Part4（对象与类，2014年03月17日 -- ？）
      |
      |----- ...
 
