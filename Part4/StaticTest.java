@@ -44,12 +44,19 @@ class Employee {
     public int getID() {
         return id;
     }
-
+    
+    /* 在这里我们可以看到，
+     * 实际上被定义成static变量的nextId也是可以被修改的，
+     * 因为静态变量也是变量；
+     * 如果不想被修改的话，
+     * 还需要加上final进行修饰
+     */
     public void setId() {
         id = nextId;
         nextId++;
     }
 
+    /* 只能通过静态方法访问自身的静态域 */
     public static int getNextId() {
         return nextId;
     }
