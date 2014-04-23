@@ -1,5 +1,12 @@
 import java.util.*;
 
+/* 调用构造器的具体处理步骤：
+ * 1. 所有的数据域被初始化为默认值（0、false或者null）
+ * 2. 按照在类声明中出现的次序，依次执行所有的域初始化语句和初始化块
+ * 3. 如果构造器第一行调用了第二个构造器（详细见《Core Java Volumn I》第129页），则执行第二个构造器主体
+ * 4. 执行这个构造器的主体
+ */
+
 public class ConstructorTest {
     public static void main(String[] args) {
         Emplogee[] staff = new Emplogee[3];
@@ -54,6 +61,16 @@ class Emplogee {
         this("Emplogee #" + nextId, s);
     }
 
+    /* 这是“无参数构造器”，
+     * 对象由无参数构造器构造时，其状态会被设置为适当的默认值。
+     * 值得注意的是：
+     *     如果在编写一个类没有提供构造器，
+     *     那么系统会自动提供一个无参数的构造器，
+     *     这个构造器将所有的实例域都设置为默认值（0、false或者null）。
+     *     当类中提供了至少一个构造器，
+     *     但是没有提供无参数的构造器的时候，
+     *     则在构造对象的时候如果没有提供相应的参数则被视为不合法。
+     */
     public Emplogee() {
     }
 
