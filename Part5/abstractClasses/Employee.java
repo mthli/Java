@@ -3,6 +3,9 @@ package abstractClasses;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+/* 因为Employee类中实现了Person抽象类中的所有抽象方法，
+ * 所以不需要使用abstract关键字进行修饰
+ */
 public class Employee extends Person {
    private double salary;
    private Date hireDay;
@@ -22,6 +25,7 @@ public class Employee extends Person {
       return hireDay;
    }
 
+   /* 这里对Person抽象类中的getDescription抽象方法进行了重写 */
    public String getDescription() {
       return String.format("an employee with a salary of $%.2f", salary);
    }

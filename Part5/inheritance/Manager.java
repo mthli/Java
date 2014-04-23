@@ -18,7 +18,13 @@ public class Manager extends Employee {
         bonus = 0;
     }
 
-    /* 在这里对其超类（Employee）中的getSalary方法进行了重写（override） */
+    /* 在这里对其超类（Employee）中的getSalary方法进行了重写（override）；
+     * 由于在Manager类中也提供了getSalary方法，
+     * 相当于将Employee类中的getSalary方法进行了覆盖，
+     * 当直接调用getSalary类的时候，实际上是调用Manager类中的getSalary，
+     * 而不是Employee类中的getSalary；
+     * 所以如果要使用Employee类中提供的getSalary方法，需要使用super关键字
+     */
     public double getSalary() {
         double baseSalary = super.getSalary();
         return baseSalary + bonus;

@@ -33,7 +33,7 @@ package abstractClasses;
  */
 
 public abstract class Person {
-   
+    /* 这里就定义了一个抽象方法 */
     public abstract String getDescription();
     private String name;
 
