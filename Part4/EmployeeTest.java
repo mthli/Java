@@ -59,6 +59,17 @@ class Employee {
         return hireDay;
     }
 
+    /* 如果愿意的话，可以使用下面这段代码来书写raiseSalary：
+     *     public void raiseSalary(double byPercent) {
+     *         double raise = this.salary * byPercent / 100;
+     *         this.salary += raise;
+     *    }
+     *  在这里this表示“隐式参数（implicit）”，
+     *  指代了出现在方法名前面的Employee类对象，
+     *  可以理解为“这个对象的XXX”。
+     *  用this的优点在于，
+     *  可以将实例域与局部变量明显的区分开来
+     */
     public void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
         salary += raise;
