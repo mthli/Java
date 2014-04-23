@@ -29,6 +29,15 @@ public class CompoundInterest {
 
         System.out.println();
 
+        /* 这里用到了Java中的for each循环结构，
+         * 可以理解为增强型的for循环，
+         * 其使用方法如下：
+         *     for (variable : collection) statement
+         *     定义一个变量用于暂时寄存集合中的每一个元素，
+         *     并执行相应的语句（也可以是语句块）。
+         *     collection这一集合表达式必须是一个数组，
+         *     或者是一个实现了Iterable接口的类对象（比如ArrayList）
+         */
         for (double[] row : balances) {
             for (double b : row) {
                 System.out.printf("%10.2f", b);
