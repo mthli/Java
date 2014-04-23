@@ -1,0 +1,17 @@
+    《Core Java》从第5章开始就引入了包（package）来作为事例代码，在这里需要了解一下引入包管理后如何编译和运行程序的问题。
+
+    以inheritance这个package为例。
+    inheritance中包含了3个文件，分别是Employee.java、Manager.java和ManagerTest.java，画成目录树就是下面这个样子的：
+    inheritance（基目录）
+      |
+      | ----- Employee.java
+      |
+      | ----- Manager.java
+      |
+      | ----- ManagerTest.java
+
+    编译和运行程序的时候需要从这个package的基目录开始：
+    1. 编译：
+           javac inheritance/*.java
+    2. 运行：
+           java inheritance/ManagerTest
