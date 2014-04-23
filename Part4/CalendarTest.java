@@ -1,6 +1,12 @@
 import java.text.DateFormatSymbols;
 import java.util.*;
 
+
+/* 这里需要提醒一下：
+ *     在一个Java源文件里面，
+ *     只能有一个公有类，
+ *     但是可以有任意数目的非公有类（非公有类!=私有类）
+ */
 public class CalendarTest {
     public static void main(String[] args) {
         GregorianCalendar d = new GregorianCalendar();

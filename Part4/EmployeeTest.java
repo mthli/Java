@@ -21,11 +21,20 @@ public class EmployeeTest {
     }
 }
 
+/* 如前CalendarTest.java开头的注释所述，
+ * 这里的Employee就是一个非公有类，
+ * 但它不是一个私有类
+ */
 class Employee {
     private String name;
     private double salary;
     private Date hireDay;
 
+    /* 下面这段代码块是一个构造器，
+     * 顾名思义，构造器是用来构造一个新的对象实例的，
+     * 需要注意的是：
+     *     构造器的名字应该与所属类的名字相同
+     */
     public Employee(String n, double s, int year, int month, int day) {
         name = n;
         salary = s;
@@ -33,6 +42,11 @@ class Employee {
         hireDay = calendar.getTime();
     }
 
+    /* 以下的几处代码块是一些访问器和更改器，
+     * 通常的习惯是，
+     * 在访问器方法名前面加上前缀get，
+     * 而在更改器方法前面加上前缀set
+     */
     public String getName() {
         return name;
     }
