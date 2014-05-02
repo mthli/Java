@@ -1,6 +1,7 @@
 import java.util.*;
 
-/* 调用构造器的具体处理步骤：
+/* 
+ * 调用构造器的具体处理步骤：
  * 1. 所有的数据域被初始化为默认值（0、false或者null）
  * 2. 按照在类声明中出现的次序，依次执行所有的域初始化语句和初始化块
  * 3. 如果构造器第一行调用了第二个构造器（详细见《Core Java Volumn I》第129页），则执行第二个构造器主体
@@ -11,7 +12,8 @@ public class ConstructorTest {
     public static void main(String[] args) {
         Emplogee[] staff = new Emplogee[3];
         
-        /* 这里利用到了Java中的“重载”进行初始化，
+        /* 
+         * 这里利用到了Java中的“重载”进行初始化，
          * 当然在这里就不能像C++中叫“函数重载”了，
          * 在Java中，应该叫做“方法重载”
          */
@@ -36,7 +38,8 @@ class Emplogee {
     private String name = "";
     private double salary;
 
-    /* 下面的代码块用到的是“静态初始化块”
+    /* 
+     * 下面的代码块用到的是“静态初始化块”
      * 当对类的静态域进行初始化的代码比较复杂的时候，
      * 可以考虑使用“静态初始化块”进行初始化
      */
@@ -61,7 +64,8 @@ class Emplogee {
         this("Emplogee #" + nextId, s);
     }
 
-    /* 这是“无参数构造器”，
+    /* 
+     * 这是“无参数构造器”，
      * 对象由无参数构造器构造时，其状态会被设置为适当的默认值。
      * 值得注意的是：
      *     仅当在编写一个类没有提供构造器时候，

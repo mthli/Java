@@ -1,4 +1,5 @@
-/* 在这里需要对Java的传递机制进行了解：
+/* 
+ * 在这里需要对Java的传递机制进行了解：
  *     Java总是采用“按值传递”
  *
  * 一些概念：
@@ -8,7 +9,8 @@
 
 public class ParamTest {
     public static void main(String[] args) {
-        /* 第一个测试，
+        /* 
+         * 第一个测试，
          * 调用的tripleValue方法不能够修改原先的数值
          */
         System.out.println("Testing tripleValue:");
@@ -17,7 +19,8 @@ public class ParamTest {
         tripleValue(percent);
         System.out.println("After: percent = " + percent);
 
-        /* 第二个测试，
+        /* 
+         * 第二个测试，
          * 调用的tripleSalary方法成功的改变了对象。
          * 你可能会奇怪了：
          *     Java明明是按值传递，为什么能够改变原来的对象呢？
@@ -42,7 +45,8 @@ public class ParamTest {
         tripleSalary(harry);
         System.out.println("After: salary = " + harry.getSalary());
 
-        /* 第三个测试，
+        /* 
+         * 第三个测试，
          * 调用的swap方法并不能交换两个对象：
          *     因为swap内部交换的是其拷贝过来的临时的对象，
          *     而不是实际的对象
@@ -98,4 +102,3 @@ class Employee {
         salary += raise;
     }
 }
-

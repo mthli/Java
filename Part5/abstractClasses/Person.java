@@ -1,6 +1,7 @@
 package abstractClasses;
 
-/* 下面的Person类使用了abstract关键字进行修饰，
+/* 
+ * 下面的Person类使用了abstract关键字进行修饰，
  * 表示这是一个“抽象类”；
  * 下面具体说说abstract的一些用法：
  * 1. 修饰类：
