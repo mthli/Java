@@ -58,4 +58,6 @@
      |
      | ----- abstractClasses（抽象类）
      |
+     | ----- equals（Object超类）
+     |
      | ----- ...

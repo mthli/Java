@@ -5,6 +5,12 @@ package inheritance;
  * 需要注意的是：
  *     在Java中，所有的继承都是公用继承，
  *     而没有C++中的私有继承和保护继承
+ *
+ * 在这里顺路总结一下Java中用于控制可见性的4个访问修饰符：
+ * 1. private   -- 仅对本类可见
+ * 2. public    -- 对所有类可见
+ * 3. protected -- 对本包和所有子类可见
+ * 4. 没有修饰符的情况下。默认对本包可见
  */
 public class Manager extends Employee {
     private double bonus;
